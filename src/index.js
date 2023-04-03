@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Services from './components/service';
-import Footer from './components/Footer';
-import Gallery from './components/Gallery';
+
+const Navbar = lazy(() =>import('./components/Navbar'));
+const About = lazy(() =>import('./components/About'));
+const Services = lazy(() =>import('./components/service'));
+const Gallery = lazy(() =>import('./components/Gallery'));
+const Footer = lazy(() =>import('./components/Footer'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +13,9 @@ root.render(
     <Navbar />
     <About />
     <Services />
-    <Gallery />
+    <Suspense fallback={<h1>Loading gallery images...</h1>}> 
+      <Gallery /> 
+    </Suspense>
     <Footer />
   </React.StrictMode>
 );
