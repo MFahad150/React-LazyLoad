@@ -9,7 +9,7 @@ function Navbar (){
             <ul>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES</a></li>
-          <li><a href="#contact-us">CONTACT US</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
             </ul>
         </nav>
     </header>

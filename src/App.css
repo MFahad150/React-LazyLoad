@@ -63,8 +63,12 @@ li:hover::after {
 #services p{
   text-align: center;
 }
-#card {
+
+#services {
+background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
 text-align: center;
+}
+#card {
 padding: 20px;
 }
 #card li{
@@ -75,4 +79,30 @@ padding: 20px;
   text-decoration: none;
   color: black;
   border:2px solid rgb(146, 234, 146);
+}
+
+#con {
+  text-align: center;
+  padding: 20px;
+}
+#con ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#con ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#con ul li a {
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1rem 5rem;
+  background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
 }
